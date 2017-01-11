@@ -1,0 +1,39 @@
+html
+    head
+        title しぇか椅子マップ
+        meta(charset='utf-8')
+        meta(name='author' content='hideo54')
+        meta(name='viewport' content='width=device-width, initial-scale=1,maximum-scale=1')
+        link(rel='stylesheet', href='style.css')
+    body
+        h1 しぇか椅子マップ
+        p
+            a(href='http://shekarashika.com/shop/higashinada' target='_blank') しぇからしか東灘店
+            | の各椅子のガタガタ度を示したマップです。
+        p 手動でデータを更新しています。ご協力は
+            a(href='https://twitter.com/hideo54', target='_blank') @hideo54
+            | まで。
+        #image
+            #counter
+            for chair, index in chairs
+                if chair.gataLevel === null
+                    .chair(id='chair'+(index+1) class='gray')
+                if chair.gataLevel === 0
+                    .chair(id='chair'+(index+1) class='green')
+                if chair.gataLevel === 1
+                    .chair(id='chair'+(index+1) class='yellow')
+                if chair.gataLevel === 2
+                    .chair(id='chair'+(index+1) class='red')
+        #captions
+            .caption
+                .green
+                p.text 普通
+            .caption
+                .yellow
+                p.text ガタ
+            .caption
+                .red
+                p.text バリガタ
+            .caption
+                .gray
+                p.text データなし

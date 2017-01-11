@@ -1,0 +1,159 @@
+h1, p {
+    text-align: center;
+}
+
+@green: #2ecc71;
+@yellow: #f1c40f;
+@red: #c0392b;
+@gray: #95a5a6;
+@cloud: #ecf0f1;
+
+#image {
+    position: relative;
+    width: 90vmin;
+    max-width: 400px;
+    height: 90vmin;
+    max-height: 400px;
+    margin: auto;
+    border: solid @gray 1px;
+    #counter {
+        position: absolute;
+        width: 78%;
+        height: 78%;
+        top: 10%;
+        left: 0;
+        margin: 0;
+        border: outset;
+    }
+    .chair (@top, @left) {
+        position: absolute;
+        width: 8%;
+        height: 8%;
+        top: @top;
+        left: @left;
+        margin: 1%;
+        border-radius: 50%;
+    }
+    .chair#chair1 {
+        .chair(0, 10%);
+    }
+    .chair#chair2 {
+        .chair(0, 20%);
+    }
+    .chair#chair3 {
+        .chair(0, 30%);
+    }
+    .chair#chair4 {
+        .chair(0, 40%);
+    }
+    .chair#chair5 {
+        .chair(0, 50%);
+    }
+    .chair#chair6 {
+        .chair(0, 60%);
+    }
+    .chair#chair7 {
+        .chair(0, 70%);
+    }
+    .chair#chair8 {
+        .chair(10%, 80%);
+    }
+    .chair#chair9 {
+        .chair(20%, 80%);
+    }
+    .chair#chair10 {
+        .chair(30%, 80%);
+    }
+    .chair#chair11 {
+        .chair(40%, 80%);
+    }
+    .chair#chair12 {
+        .chair(50%, 80%);
+    }
+    .chair#chair13 {
+        .chair(60%, 80%);
+    }
+    .chair#chair14 {
+        .chair(70%, 80%);
+    }
+    .chair#chair15 {
+        .chair(80%, 80%);
+    }
+    .chair#chair16 {
+        .chair(90%, 70%);
+    }
+    .chair#chair17 {
+        .chair(90%, 60%);
+    }
+    .chair#chair18 {
+        .chair(90%, 50%);
+    }
+    .chair#chair19 {
+        .chair(90%, 40%);
+    }
+    .chair#chair20 {
+        .chair(90%, 30%);
+    }
+    .chair#chair21 {
+        .chair(90%, 20%);
+    }
+    .chair#chair22 {
+        .chair(90%, 10%);
+    }
+    .chair#chair23 {
+        .chair(90%, 0%);
+    }
+    .chair.gray {
+        background-color: @gray;
+    }
+    .chair.green {
+        background-color: @green;
+    }
+    .chair.yellow {
+        background-color: @yellow;
+    }
+    .chair.red {
+        background-color: @red;
+    }
+}
+
+.color-circle (@color, @size: 30px) {
+    display: inline-block;
+    width: @size;
+    height: @size;
+    vertical-align: middle;
+    background-color: @color;
+    border-radius: 50%;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+}
+
+#captions {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 1em;
+    .caption {
+        margin: 0.5em;
+        padding: 0.5em;
+        background-color: @cloud;
+        border-radius: 10px;
+        .green {
+            .color-circle(@green);
+        }
+        .yellow {
+            .color-circle(@yellow);
+        }
+        .red {
+            .color-circle(@red);
+        }
+        .gray {
+            .color-circle(@gray);
+        }
+    }
+}
+
+p.text {
+    display: inline-block;
+    margin: 0 0.5em;
+}

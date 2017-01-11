@@ -1,0 +1,24 @@
+{
+    "name": "shekaisumap",
+    "version": "1.0.0",
+    "main": "index.js",
+    "scripts": {
+        "build": "pug index.pug -O data.json && lessc style.less -x > style.css",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "author": "hideo54",
+    "license": "Apache-2.0",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/hideo54/shekaisumap.git"
+    },
+    "bugs": {
+        "url": "https://github.com/hideo54/shekaisumap/issues"
+    },
+    "homepage": "https://github.com/hideo54/shekaisumap#readme",
+    "description": "",
+    "dependencies": {
+        "less": "^2.7.2",
+        "pug-cli": "^1.0.0-alpha6"
+    }
+}
