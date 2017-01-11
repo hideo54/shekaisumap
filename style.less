@@ -17,6 +17,9 @@ h1, p {
     margin: auto;
     border: solid @gray 1px;
     #counter {
+        display: flex;
+        justify-content: center;
+        align-items: center;
         position: absolute;
         width: 78%;
         height: 78%;
@@ -24,6 +27,10 @@ h1, p {
         left: 0;
         margin: 0;
         border: outset;
+        img#dir {
+            width: auto;
+            height: 80%;
+        }
     }
     .chair (@top, @left) {
         position: absolute;
