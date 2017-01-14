@@ -6,7 +6,7 @@ h1, p {
 @green: #2ecc71;
 @yellow: #f1c40f;
 @red: #c0392b;
-@gray: #95a5a6;
+@gray: #bdc3c7;
 @cloud: #ecf0f1;
 
 #image {
@@ -125,17 +125,6 @@ h1, p {
     }
 }
 
-.color-circle (@color, @size: 30px) {
-    display: inline-block;
-    width: @size;
-    height: @size;
-    vertical-align: middle;
-    background-color: @color;
-    border-radius: 50%;
-    -moz-border-radius: 50%;
-    -webkit-border-radius: 50%;
-}
-
 #captions {
     display: flex;
     flex-wrap: wrap;
@@ -146,6 +135,18 @@ h1, p {
         padding: 0.5em;
         background-color: @cloud;
         border-radius: 10px;
+        .color-circle (@color, @size: 30px) {
+            display: inline-block;
+            width: 90vmin * 0.08;
+            max-width: 400px * 0.08;
+            height: 90vmin * 0.08;
+            max-height: 400px * 0.08;
+            vertical-align: middle;
+            background-color: @color;
+            border-radius: 50%;
+            -moz-border-radius: 50%;
+            -webkit-border-radius: 50%;
+        }
         .green {
             .color-circle(@green);
         }
