@@ -102,18 +102,18 @@
         },
         {
             "id": 21,
-            "gataLevel": null,
-            "lastUpdate": null
+            "gataLevel": 0,
+            "lastUpdate": "20170113"
         },
         {
             "id": 22,
-            "gataLevel": null,
-            "lastUpdate": null
+            "gataLevel": 2,
+            "lastUpdate": "20170113"
         },
         {
             "id": 23,
-            "gataLevel": null,
-            "lastUpdate": null
+            "gataLevel": 0,
+            "lastUpdate": "20170113"
         }
     ]
 }
