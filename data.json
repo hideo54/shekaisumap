@@ -87,23 +87,23 @@
         },
         {
             "id": 18,
-            "gataLevel": null,
-            "lastUpdate": null
+            "gataLevel": 0,
+            "lastUpdate": "20170207"
         },
         {
             "id": 19,
             "gataLevel": 0,
-            "lastUpdate": "20170111"
+            "lastUpdate": "20170207"
         },
         {
             "id": 20,
             "gataLevel": 2,
-            "lastUpdate": "20170111"
+            "lastUpdate": "20170207"
         },
         {
             "id": 21,
             "gataLevel": 0,
-            "lastUpdate": "20170113"
+            "lastUpdate": "20170207"
         },
         {
             "id": 22,
