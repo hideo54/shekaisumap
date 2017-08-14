@@ -2,8 +2,8 @@
     "chairs": [
         {
             "id": 1,
-            "gataLevel": null,
-            "lastUpdate": null
+            "gataLevel": 2,
+            "lastUpdate": "20170814"
         },
         {
             "id": 2,
@@ -17,8 +17,8 @@
         },
         {
             "id": 4,
-            "gataLevel": null,
-            "lastUpdate": null
+            "gataLevel": 1,
+            "lastUpdate": "20170814"
         },
         {
             "id": 5,
